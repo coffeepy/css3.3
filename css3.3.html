@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+  </head>
+
+
+  <style type="text/css">
+    body {
+      background-image:url("http://wallpapersonthe.net/wallpapers/b/1920x1080/1920x1080-circle_blue_bubbles_bubble_abstract-19572.jpg");
+      background-color: blue;
+    }
+    /*.white-box {
+      background-color: white;
+      text-align:center;
+    }
+    input {
+      background-color: red;
+    }*/
+    .single-detail, .single-detail-block{
+      background-color: rgba(255,255,255,0.5);
+      border: 1px solid white;
+      margin: 10px;
+      border-radius: 8px;
+      width: 75%%;
+    }
+
+    .single-detail div {
+      display: inline-block;
+      /*text-align: center;*/
+    }
+    .single-detail .inputs {
+      margin: 10px;
+    }
+    .single-detail .labels {
+      width: 200px;
+      padding-left: 5px;
+      /*margin-left: 30px;*/
+    }
+    /*.single-detail .labels {
+      margin: 0px;
+      padding: 0px;
+    }*/
+    .header {
+      margin-left: 10px;
+      color: white;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      height: 30px;
+      width: 300px;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    img {
+      height: 30px;
+      width: 60px;
+    }
+    input[type='radio'] {
+      height: 30px;
+      width: 30px;
+    }
+    .radios div {
+      display: inline-block;
+      margin-left: 10%;
+    }
+    textarea {
+      border-radius: 8px;
+    }
+    .textarea-fix {
+      margin-top: 5px;
+      float: left;
+    }
+    #card-type {
+      margin: 5px;
+    }
+  </style>
+
+
+  <body>
+    <form class="css_33" action="index.html" method="post">
+
+      <div class="multi-details">
+        <div class="header">
+          Step 1: Your details
+        </div>
+        <div class="single-detail">
+          <div class="labels">
+            <label for="name">Name</label>
+          </div>
+          <div class="inputs">
+            <input type="text" name="name" >
+          </div>
+        </div>
+
+        <div class="single-detail">
+          <div class="labels">
+            <label for="email">Email</label>
+          </div>
+          <div class="inputs">
+            <input type="text" name="email" >
+          </div>
+        </div>
+
+        <div class="single-detail">
+          <div class="labels">
+            <label for="phone">Phone</label>
+          </div>
+          <div class="inputs">
+            <input type="text" name="phone" >
+          </div>
+        </div>
+      </div>
+
+      <div class="mult-details">
+        <div class="header">
+          Step 2: Delivery Address
+        </div>
+        <div class="single-detail">
+          <div class="labels  textarea-fix">
+            <label for="name" class="textareaLabel">Address</label>
+          </div>
+          <div class="inputs">
+            <textarea name="name" rows="8" cols="40"></textarea>
+          </div>
+        </div>
+
+        <div class="single-detail">
+          <div class="labels">
+            <label for="postcode">Post Code</label>
+          </div>
+          <div class="inputs">
+            <input type="text" name="postcode" >
+          </div>
+        </div>
+
+        <div class="single-detail">
+          <div class="labels">
+            <label for="country">Country</label>
+          </div>
+          <div class="inputs">
+            <input type="text" name="country" >
+          </div>
+        </div>
+      </div>
+
+      <div class="mult-details">
+        <div class="header">
+          Step 3: Card Details
+        </div>
+
+        <div class="single-detail-block">
+          <div class="radio-inputs">
+            <div id="card-type">
+              <label for="cards">Card Type</label>
+            </div>
+            <div class="radios">
+              <div class="radio">
+                  <input type="radio" name="name" value="Visa">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Old_Visa_Logo.svg/175px-Old_Visa_Logo.svg.png" alt="" />
+                  VISA
+              </div>
+              <div class="radio">
+                  <input type="radio" name="name" value="Visa">
+                  <img src="https://lh5.ggpht.com/wPAwN0pZIhSlK6xL5C42rypVEw9D-2owdXOW_MjmJPipx5s1xudB1BRkQBaYWbR_f34=w300" alt="" />
+                  AMEX
+              </div>
+              <div class="">
+                <input type="radio" name="name" value="Visa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2000px-MasterCard_Logo.svg.png" alt="" />
+                Mastercard
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="single-detail">
+          <div class="labels">
+            <label for="cardnum">Card Number</label>
+          </div>
+          <div class="inputs">
+            <input type="text" name="cardnum" >
+          </div>
+        </div>
+
+        <div class="single-detail">
+          <div class="labels">
+            <label for="securecode">Security Code</label>
+          </div>
+          <div class="inputs">
+            <input type="text" name="securecode">
+          </div>
+        </div>
+
+        <div class="single-detail">
+          <div class="labels">
+            <label for="nameoncard">Name on Card</label>
+          </div>
+          <div class="inputs">
+            <input type="text" name="nameoncard" placeholder="Exact name as on the card">
+          </div>
+        </div>
+      </div>
+
+
+    </form>
+  </body>
+</html>
