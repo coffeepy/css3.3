@@ -11,12 +11,15 @@
       background-image:url("http://wallpapersonthe.net/wallpapers/b/1920x1080/1920x1080-circle_blue_bubbles_bubble_abstract-19572.jpg");
       background-color: blue;
     }
+    form {
+      width: 750px;
+    }
     .single-detail, .single-detail-block{
       background-color: rgba(255,255,255,0.5);
       border: 1px solid white;
       margin: 10px;
       border-radius: 8px;
-      width: 750px;
+      width: inherit;
     }
 
     .single-detail div {
@@ -63,6 +66,17 @@
     }
     #card-type {
       margin: 5px;
+    }
+    .button {
+      width: inherit;
+      text-align: center;
+    }
+    button {
+     padding: 10px;
+     border-radius: 8px;
+     border: 1px solid white;
+     color: white;
+     background-color:blue;
     }
   </style>
 
@@ -191,7 +205,9 @@
           </div>
         </div>
       </div>
-
+      <div class="button">
+        <button type="button" name="button">BUY IT!</button>
+      </div>
 
     </form>
   </body>
